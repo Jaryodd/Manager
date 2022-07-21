@@ -65,19 +65,19 @@ const init = async () => {
 }
 const secondInit = async (initAnswers) => {
     try {
-        let role; 
+        let role;
         if (team.length > 0) {
-        role = await inquirer.prompt(questions.secondFinal)
+            role = await inquirer.prompt(questions.secondFinal)
         } else {
             role = {
                 engineerIntern: "Manager"
             }
-        } 
-        let answers; 
+        }
+        let answers;
         let emp;
         if (role.engineerIntern === "Manager") {
             answers = await inquirer.prompt(questions.manager)
-            emp = new Manager (initAnswers.name,initAnswers.id,initAnswers.email,answers.officeNumber)
+            emp = new Manager(initAnswers.name, initAnswers.id, initAnswers.email, answers.officeNumber)
         } else if (role.engineerIntern === "Engineer") {
             answers = await inquirer.prompt(questions.engineer)
             emp = new Engineer(initAnswers.name, initAnswers.id, initAnswers.email, answers.github)
@@ -97,7 +97,7 @@ const final = async () => {
     if (answers.yesNo === "yes") {
         init()
     } else {
-       generateHtml(team) 
+        generateHtml(team)
     }
 
 }

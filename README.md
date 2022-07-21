@@ -1,6 +1,6 @@
 # Manager
 ## VIDEO WALK THROUGH
-[Watch Video](./ManagerVideo.mp4)
+[Watch Video](https://drive.google.com/file/d/1Oo8Ye0H7M8xlKOeFzDDh0ZFEXdk-ppq5/view)
 
 ## Description 
 A command line app that will generate a profile for each employee in a company. 
